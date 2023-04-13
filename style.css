@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+
+    --background-color: #ffffff;
+    --primary-color: #090446;
+    --secondary-color: #F8A81B;
+    --fill-color: rgba(9, 4, 70, 0.2);
+    --button-color: #F71735;
+
+    --primary-font-family: 'Poppins';
+    --padrao-font-size: 22px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    gap: 20% ;
+}
+
+.ellipse-background {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    width: 1220px;
+    height: 1220px;
+    left: -347px;
+    top: -99px;
+    z-index: -1;
+}
+
+.image {
+    margin-left: 15%;
+}
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.content-tittle {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 50px;
+    /* line-height: 75px; */
+}
+
+.content-text {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: var(--padrao-font-size);
+    /* line-height: 30px; */
+}
+
+.input {
+    background-color: var(--fill-color);
+    border-style: hidden;
+    border-radius: 12px;
+    width: 575px;
+    height: 60px;
+    margin: 5px 0px 5px 0px;
+}
+
+label {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: var(--padrao-font-size);
+    padding-left: 10px;
+}
+
+.login-interface-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 0px 10px;
+}
+
+/* problema com a background-color */
+.checkbox {
+    background-color: var(--fill-color);
+    border-style: hidden;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.forget-password {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: var(--padrao-font-size);
+    text-decoration: none;
+}
+
+.sign-in-buton {
+    background-color: var(--button-color);
+    width: 575px;
+    height: 80px;
+    position: relative;
+}
+
+.sign-in-text {
+    color: var(--secondary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-with-socials--tittle {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: var(--padrao-font-size);
+    text-transform: uppercase;
+    text-align: center;   
+    margin-top: -20px;
+}
+
+.socials-buttons {
+    display: flex;
+    margin: 32px 10px 0 10px;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: var(--fill-color);
+    border: 50px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+
+.social-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-option {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: var(--padrao-font-size);
+    margin-top: 40px;
+}
+
+.register-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
